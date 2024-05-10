@@ -28,8 +28,8 @@ public class MainScene extends Scene {
         add(Layer.controller, new EnemyGenerator());
         add(Layer.controller, new CollisionChecker(this));
 
-        add(Layer.bg, new VertScrollBackground(R.mipmap.bg_city, 0.0f));
-        add(Layer.bg, new VertScrollBackground(R.mipmap.clouds, 0.4f));
+        add(Layer.bg, new VertScrollBackground(R.mipmap.bg_earth, 0.0f));
+        //add(Layer.bg, new VertScrollBackground(R.mipmap.clouds, 0.4f));
 
         add(Layer.bg, new Button(R.mipmap.btn_jump_n, 1.5f, 15.0f, 2.0f, 1.5f, new Button.Callback() {
             @Override

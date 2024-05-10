@@ -130,7 +130,7 @@ public class Fighter extends Sprite {
             sparkRect.set(x - SPARK_WIDTH/2, y - SPARK_HEIGHT/2 - SPARK_OFFSET,
                     x + SPARK_WIDTH/2, y + SPARK_HEIGHT/2 - SPARK_OFFSET
             );
-            canvas.drawBitmap(sparkBitmap, null, sparkRect, null);
+            //canvas.drawBitmap(sparkBitmap, null, sparkRect, null);
         }
     }
 
