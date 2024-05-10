@@ -24,6 +24,21 @@ public class Sprite implements IGameObject {
         Log.v(TAG, "Created " + this.getClass().getSimpleName() + "@" + System.identityHashCode(this));
     }
 
+    public Sprite(int mipmapId, float x, float y, float width, float height) {
+        if (mipmapId != 0) {
+            bitmap = BitmapPool.get(mipmapId);
+        }
+        setPosition(x, y, width, height);
+    }
+
+    public float getWidth() {
+        return width;
+    }
+
+    public float getHeight() {
+        return height;
+    }
+
     public void setPosition(float x, float y, float radius) {
         this.x = x;
         this.y = y;

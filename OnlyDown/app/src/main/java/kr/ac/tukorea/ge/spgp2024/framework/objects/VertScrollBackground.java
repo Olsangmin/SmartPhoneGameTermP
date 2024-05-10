@@ -15,7 +15,7 @@ public class VertScrollBackground extends Sprite {
     }
     @Override
     public void update(float elapsedSeconds) {
-        this.y += speed * elapsedSeconds; // y 값을 스크롤된 양으로 사용한다
+        this.y -= speed; // y 값을 스크롤된 양으로 사용한다
     }
 
     @Override
