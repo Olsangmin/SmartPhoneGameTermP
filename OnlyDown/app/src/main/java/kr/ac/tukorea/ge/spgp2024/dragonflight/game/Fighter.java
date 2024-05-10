@@ -53,7 +53,7 @@ public class Fighter extends Sprite {
 
     public Fighter() {
         super(R.mipmap.fighters);
-        setPosition(Metrics.width / 2, Metrics.height - FIGHTER_Y_OFFSET, PLANE_WIDTH, PLANE_HEIGHT);
+        setPosition(Metrics.width / 2, Metrics.height - 14, PLANE_WIDTH, PLANE_HEIGHT);
         setTargetX(x);
 
         targetBmp = BitmapPool.get(R.mipmap.fighter_target);

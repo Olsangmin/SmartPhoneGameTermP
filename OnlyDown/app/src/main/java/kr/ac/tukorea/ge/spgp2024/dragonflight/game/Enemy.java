@@ -13,7 +13,7 @@ import kr.ac.tukorea.ge.spgp2024.framework.util.Gauge;
 import kr.ac.tukorea.ge.spgp2024.framework.view.Metrics;
 
 public class Enemy extends AnimSprite implements IBoxCollidable, IRecyclable {
-    private static final float SPEED = 3.0f;
+    private static final float SPEED = -3.0f;
     private static final float RADIUS = 0.9f;
     private static final int[] resIds = {
             R.mipmap.enemy_01, R.mipmap.enemy_02, R.mipmap.enemy_03, R.mipmap.enemy_04, R.mipmap.enemy_05,
@@ -51,7 +51,7 @@ public class Enemy extends AnimSprite implements IBoxCollidable, IRecyclable {
     @Override
     public void update(float elapsedSeconds) {
         super.update(elapsedSeconds);
-        if (dstRect.top > Metrics.height) {
+        if (dstRect.bottom < Metrics.height) {
             Scene.top().remove(MainScene.Layer.enemy, this);
         }
         collisionRect.set(dstRect);
