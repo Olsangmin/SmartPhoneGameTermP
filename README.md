@@ -14,3 +14,7 @@
 
 현재 인게임
 ![image](https://github.com/Olsangmin/SmartPhoneGameTermP/assets/133941406/2f871eca-85c7-462d-a16d-0fc9290dd4af)
+
+중간발표 자료
+[스맛겜 중간발표.pptx](https://github.com/Olsangmin/SmartPhoneGameTermP/files/15275755/default.pptx)
+
