@@ -28,24 +28,24 @@ public class MainScene extends Scene {
         add(Layer.controller, new EnemyGenerator());
         add(Layer.controller, new CollisionChecker(this));
 
-        add(Layer.bg, new VertScrollBackground(R.mipmap.bg_city, 0.2f));
+        add(Layer.bg, new VertScrollBackground(R.mipmap.bg_city, 0.0f));
         add(Layer.bg, new VertScrollBackground(R.mipmap.clouds, 0.4f));
 
-//        add(Layer.touch, new Button(R.mipmap.btn_jump_n, 1.5f, 8.0f, 2.0f, 0.75f, new Button.Callback() {
-//            @Override
-//            public boolean onTouch(Button.Action action) {
-//                //Log.d(TAG, "Button: Slide " + action);
-//                // player.turn(action == Button.Action.pressed);
-//               return true;
-//            }
-//        }));
-//        add(Layer.touch, new Button(R.mipmap.enemy_01, 3.5f, 8.0f, 2.0f, 0.75f, new Button.Callback() {
-//            @Override
-//            public boolean onTouch(Button.Action action) {
-//               // player.jump();
-//                return false;
-//            }
-//        }));
+        add(Layer.bg, new Button(R.mipmap.btn_jump_n, 1.5f, 15.0f, 2.0f, 1.5f, new Button.Callback() {
+            @Override
+            public boolean onTouch(Button.Action action) {
+                //Log.d(TAG, "Button: Slide " + action);
+                // player.turn(action == Button.Action.pressed);
+               return true;
+            }
+        }));
+        add(Layer.bg, new Button(R.mipmap.btn_slide_n, 7.5f, 15.0f, 2.0f, 1.5f, new Button.Callback() {
+            @Override
+            public boolean onTouch(Button.Action action) {
+               // player.jump();
+                return false;
+            }
+        }));
 
         this.fighter = new Fighter();
         add(Layer.player, fighter);
