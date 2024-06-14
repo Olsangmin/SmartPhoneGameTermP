@@ -31,24 +31,24 @@ public class MainScene extends Scene {
         add(Layer.bg, new VertScrollBackground(R.mipmap.bg_earth, 0.0f));
         //add(Layer.bg, new VertScrollBackground(R.mipmap.clouds, 0.4f));
 
-        add(Layer.bg, new Button(R.mipmap.btn_jump_n, 1.5f, 15.0f, 2.0f, 1.5f, new Button.Callback() {
+        this.fighter = new Fighter();
+        add(Layer.player, fighter);
+
+        add(Layer.touch, new Button(R.mipmap.btn_slide_n, 1.5f, 15.5f, 2.0f, 1.5f, new Button.Callback() {
             @Override
             public boolean onTouch(Button.Action action) {
                 //Log.d(TAG, "Button: Slide " + action);
-                // player.turn(action == Button.Action.pressed);
-               return true;
+                fighter.slide();
+                return true;
             }
         }));
         add(Layer.bg, new Button(R.mipmap.btn_slide_n, 7.5f, 15.0f, 2.0f, 1.5f, new Button.Callback() {
             @Override
             public boolean onTouch(Button.Action action) {
-               // player.jump();
+                fighter.jump();
                 return false;
             }
         }));
-
-        this.fighter = new Fighter();
-        add(Layer.player, fighter);
 
         this.score = new Score(R.mipmap.number_24x32, Metrics.width - 0.5f, 0.5f, 0.6f);
         score.setScore(0);

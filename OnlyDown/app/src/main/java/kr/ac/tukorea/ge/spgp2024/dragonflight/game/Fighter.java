@@ -142,6 +142,14 @@ public class Fighter extends Sprite {
         );
     }
 
+    public void jump() {
+
+    }
+
+    public void slide() {
+
+    }
+
     public boolean onTouch(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
