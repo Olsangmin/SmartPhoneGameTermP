@@ -150,14 +150,14 @@ public class Fighter extends Sprite {
 
     }
 
-    public boolean onTouch(MotionEvent event) {
-        switch (event.getAction()) {
-            case MotionEvent.ACTION_DOWN:
-            case MotionEvent.ACTION_MOVE:
-                float[] pts = Metrics.fromScreen(event.getX(), event.getY());
-                setTargetX(pts[0]);
-                return true;
-        }
-        return false;
-    }
+//    public boolean onTouch(MotionEvent event) {
+//        switch (event.getAction()) {
+//            case MotionEvent.ACTION_DOWN:
+//            case MotionEvent.ACTION_MOVE:
+//                float[] pts = Metrics.fromScreen(event.getX(), event.getY());
+//                setTargetX(pts[0]);
+//                return true;
+//        }
+//        return false;
+//    }
 }
