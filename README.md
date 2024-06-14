@@ -1,4 +1,13 @@
 # 발표 자료
+# 3차 발표 자료
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------
 # 1차 발표 자료
 [스맛겜 발표.pptx](https://github.com/Olsangmin/SmartPhoneGameTermP/files/14861162/default.pptx)
 
@@ -25,4 +34,3 @@
 
 중간발표 자료
 [스맛겜 중간발표.pptx](https://github.com/Olsangmin/SmartPhoneGameTermP/files/15275755/default.pptx)
-
