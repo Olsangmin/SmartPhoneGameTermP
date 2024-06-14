@@ -30,6 +30,14 @@
             android:text="Dragon Flight"
             android:textSize="50sp"
              />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:onClick="onBtnStartGame"
+            />
     </LinearLayout>
 
 </RelativeLayout>

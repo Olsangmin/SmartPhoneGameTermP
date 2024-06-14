@@ -7,6 +7,7 @@ import android.graphics.Matrix;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LinearInterpolator;
@@ -45,6 +46,10 @@ public class MainActivity extends AppCompatActivity {
         animator.pause();
     }
 
+    public void onBtnStartGame(View view) {
+        startActivity(new Intent(this, DragonFlightActivity.class));
+    }
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -57,11 +62,11 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
     }
 
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        if (event.getAction() == MotionEvent.ACTION_DOWN) {
-            startActivity(new Intent(this, DragonFlightActivity.class));
-        }
-        return super.onTouchEvent(event);
-    }
+//    @Override
+//    public boolean onTouchEvent(MotionEvent event) {
+//        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+//            startActivity(new Intent(this, DragonFlightActivity.class));
+//        }
+//        return super.onTouchEvent(event);
+//    }
 }
